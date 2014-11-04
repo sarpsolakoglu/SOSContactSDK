@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E91A81761A0904F2003C88AE /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E91A81771A0904F2003C88AE /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				E91A817C1A090532003C88AE /* MultiPlatform Build */,
+			);
+			dependencies = (
+				E91A817B1A09051E003C88AE /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E91A81701A08FEE5003C88AE /* SOSContact.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBA28B1A08FE5F008586BC /* SOSContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91A81711A08FF10003C88AE /* SAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBA29F1A08FE66008586BC /* SAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91A81721A08FF12003C88AE /* SContact.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBA2A11A08FE66008586BC /* SContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91A81731A08FF15003C88AE /* SAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBA2A31A08FE66008586BC /* SAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BBA28C1A08FE5F008586BC /* SOSContact.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E9BBA28B1A08FE5F008586BC /* SOSContact.h */; };
+		E9BBA2A51A08FE66008586BC /* SAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA2A01A08FE66008586BC /* SAddressBook.m */; };
+		E9BBA2A61A08FE66008586BC /* SContact.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA2A21A08FE66008586BC /* SContact.m */; };
+		E9BBA2A71A08FE66008586BC /* SAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA2A41A08FE66008586BC /* SAddress.m */; };
+		E9BBA2A91A08FE78008586BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BBA2A81A08FE78008586BC /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E91A817A1A09051E003C88AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9BBA2801A08FE5F008586BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9BBA2871A08FE5F008586BC;
+			remoteInfo = SOSContact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9BBA2861A08FE5F008586BC /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E9BBA28C1A08FE5F008586BC /* SOSContact.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9BBA2881A08FE5F008586BC /* libSOSContact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSOSContact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BBA28B1A08FE5F008586BC /* SOSContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOSContact.h; sourceTree = "<group>"; };
+		E9BBA2931A08FE5F008586BC /* SOSContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOSContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BBA2961A08FE5F008586BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BBA29F1A08FE66008586BC /* SAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAddressBook.h; sourceTree = "<group>"; };
+		E9BBA2A01A08FE66008586BC /* SAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAddressBook.m; sourceTree = "<group>"; };
+		E9BBA2A11A08FE66008586BC /* SContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SContact.h; sourceTree = "<group>"; };
+		E9BBA2A21A08FE66008586BC /* SContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SContact.m; sourceTree = "<group>"; };
+		E9BBA2A31A08FE66008586BC /* SAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAddress.h; sourceTree = "<group>"; };
+		E9BBA2A41A08FE66008586BC /* SAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAddress.m; sourceTree = "<group>"; };
+		E9BBA2A81A08FE78008586BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9BBA2851A08FE5F008586BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BBA2A91A08FE78008586BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BBA2901A08FE5F008586BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9BBA27F1A08FE5F008586BC = {
+			isa = PBXGroup;
+			children = (
+				E9BBA2A81A08FE78008586BC /* Foundation.framework */,
+				E9BBA28A1A08FE5F008586BC /* SOSContact */,
+				E9BBA2941A08FE5F008586BC /* SOSContactTests */,
+				E9BBA2891A08FE5F008586BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9BBA2891A08FE5F008586BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBA2881A08FE5F008586BC /* libSOSContact.a */,
+				E9BBA2931A08FE5F008586BC /* SOSContactTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9BBA28A1A08FE5F008586BC /* SOSContact */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBA29F1A08FE66008586BC /* SAddressBook.h */,
+				E9BBA2A01A08FE66008586BC /* SAddressBook.m */,
+				E9BBA2A11A08FE66008586BC /* SContact.h */,
+				E9BBA2A21A08FE66008586BC /* SContact.m */,
+				E9BBA2A31A08FE66008586BC /* SAddress.h */,
+				E9BBA2A41A08FE66008586BC /* SAddress.m */,
+				E9BBA28B1A08FE5F008586BC /* SOSContact.h */,
+			);
+			path = SOSContact;
+			sourceTree = "<group>";
+		};
+		E9BBA2941A08FE5F008586BC /* SOSContactTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBA2951A08FE5F008586BC /* Supporting Files */,
+			);
+			path = SOSContactTests;
+			sourceTree = "<group>";
+		};
+		E9BBA2951A08FE5F008586BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBA2961A08FE5F008586BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E91A816F1A08FED2003C88AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91A81701A08FEE5003C88AE /* SOSContact.h in Headers */,
+				E91A81711A08FF10003C88AE /* SAddressBook.h in Headers */,
+				E91A81721A08FF12003C88AE /* SContact.h in Headers */,
+				E91A81731A08FF15003C88AE /* SAddress.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9BBA2871A08FE5F008586BC /* SOSContact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BBA2991A08FE5F008586BC /* Build configuration list for PBXNativeTarget "SOSContact" */;
+			buildPhases = (
+				E9BBA2841A08FE5F008586BC /* Sources */,
+				E9BBA2851A08FE5F008586BC /* Frameworks */,
+				E9BBA2861A08FE5F008586BC /* Copy Files */,
+				E91A816F1A08FED2003C88AE /* Headers */,
+				E91A81751A090335003C88AE /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOSContact;
+			productName = SOSContact;
+			productReference = E9BBA2881A08FE5F008586BC /* libSOSContact.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E9BBA2921A08FE5F008586BC /* SOSContactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BBA29C1A08FE5F008586BC /* Build configuration list for PBXNativeTarget "SOSContactTests" */;
+			buildPhases = (
+				E9BBA28F1A08FE5F008586BC /* Sources */,
+				E9BBA2901A08FE5F008586BC /* Frameworks */,
+				E9BBA2911A08FE5F008586BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOSContactTests;
+			productName = SOSContactTests;
+			productReference = E9BBA2931A08FE5F008586BC /* SOSContactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9BBA2801A08FE5F008586BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Sarp Solakoglu";
+				TargetAttributes = {
+					E91A81761A0904F2003C88AE = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E9BBA2871A08FE5F008586BC = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E9BBA2921A08FE5F008586BC = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E9BBA2831A08FE5F008586BC /* Build configuration list for PBXProject "SOSContact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9BBA27F1A08FE5F008586BC;
+			productRefGroup = E9BBA2891A08FE5F008586BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9BBA2871A08FE5F008586BC /* SOSContact */,
+				E9BBA2921A08FE5F008586BC /* SOSContactTests */,
+				E91A81761A0904F2003C88AE /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9BBA2911A08FE5F008586BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E91A81751A090335003C88AE /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		E91A817C1A090532003C88AE /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9BBA2841A08FE5F008586BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BBA2A51A08FE66008586BC /* SAddressBook.m in Sources */,
+				E9BBA2A71A08FE66008586BC /* SAddress.m in Sources */,
+				E9BBA2A61A08FE66008586BC /* SContact.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BBA28F1A08FE5F008586BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E91A817B1A09051E003C88AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9BBA2871A08FE5F008586BC /* SOSContact */;
+			targetProxy = E91A817A1A09051E003C88AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E91A81781A0904F2003C88AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E91A81791A0904F2003C88AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9BBA2971A08FE5F008586BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9BBA2981A08FE5F008586BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9BBA29A1A08FE5F008586BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		E9BBA29B1A08FE5F008586BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		E9BBA29D1A08FE5F008586BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOSContactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9BBA29E1A08FE5F008586BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOSContactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91A81771A0904F2003C88AE /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91A81781A0904F2003C88AE /* Debug */,
+				E91A81791A0904F2003C88AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9BBA2831A08FE5F008586BC /* Build configuration list for PBXProject "SOSContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BBA2971A08FE5F008586BC /* Debug */,
+				E9BBA2981A08FE5F008586BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BBA2991A08FE5F008586BC /* Build configuration list for PBXNativeTarget "SOSContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BBA29A1A08FE5F008586BC /* Debug */,
+				E9BBA29B1A08FE5F008586BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BBA29C1A08FE5F008586BC /* Build configuration list for PBXNativeTarget "SOSContactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BBA29D1A08FE5F008586BC /* Debug */,
+				E9BBA29E1A08FE5F008586BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9BBA2801A08FE5F008586BC /* Project object */;
+}
