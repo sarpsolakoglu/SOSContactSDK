@@ -5,13 +5,16 @@ To install add the SOSContact.framework library to your project and import `#imp
 
 Exampe usage
 -------
+**For this example I assumed there would be a connection with the API key that is sent through the HTTP header. The JSON data is sent in the body.**
 
-    //**For this example I assumed there would be a connection with the API key that is sent through the HTTP header. The JSON data is sent in the body.**
     [SAddressBook sharedInstance].api_key = @"lsajf9493aghaaas29";
+    
     //The URL that the JSON data would be posted to.
     [SAddressBook sharedInstance].api_url = @"api.soscontact.com/uploadContacts";
+    
     //How many times it would try to send before giving error.
     [SAddressBook sharedInstance].retryLimit = 4;
+    
     //Should the SDK ask for permission if there isn't any.
     [SAddressBook sharedInstance].shouldAskForPermission = YES;
 
@@ -30,14 +33,15 @@ Exampe usage
             }
     }];
 
-
-
-Errors that could return so the SDK user can take action accordingly.
+**Errors that could return so the SDK user can take action accordingly.**
+```
 - SOSC_ERROR_NO_PERMISSION (access denied)
 - SOSC_ERROR_NEED_TO_ASK_FOR_PERMISSION (need to ask for access but SDK user did not want to ask)
 - error from the NSSessionDataTask 
-
-
+```
+**Included in this repo**
+```
 - Example usage can be found in SOSContactTest project.
 - The framework was generated from the SOSContact project and the code can be reviewed from there.
 - The SOSContact.framework is also included.
+```
